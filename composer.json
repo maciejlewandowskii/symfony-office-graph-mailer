@@ -1,5 +1,5 @@
 {
-    "name": "vitrus/symfony-office-graph-mailer",
+    "name": "maciejlewandowskii/symfony-office-graph-mailer",
     "description": "Symfony Mailer Bridge for Microsoft Graph Api Client",
     "type": "symfony-mailer-bridge",
     "require": {
