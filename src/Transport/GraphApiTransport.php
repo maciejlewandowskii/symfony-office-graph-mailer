@@ -143,6 +143,8 @@ class GraphApiTransport extends AbstractApiTransport
             $attachments[] = [
                 '@odata.type' => '#microsoft.graph.fileAttachment',
                 'contentType' => $headers->get('Content-Type')->getBody(),
+                'contentId' => $filename,
+                'isInline' => $attachment->getDisposition() === 'inline',
                 'contentBytes' => base64_encode($attachment->getBody()),
                 'name' => $filename,
             ];
